@@ -1,0 +1,57 @@
+.square {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)
+  );
+  opacity: 0.5;
+  border-radius: 0.3em;
+  border: none;
+  font-size: 5rem;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    transition: all 0.5s ease;
+    opacity: 1;
+  }
+
+  &--x,
+  &--o {
+    opacity: 1;
+    cursor: default;
+  }
+
+  &--x::after,
+  &--o::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-family: 'FontAwesome';
+    color: $white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &--x {
+    background: $blue;
+
+    &::after {
+      content: $cross-icon;
+      margin-top: -34px;
+      font-size: 4rem;
+    }
+  }
+
+  &--o {
+    background: $pink;
+
+    &::after {
+      content: $nought-icon;
+      margin-top: -31px;
+      font-size: 3.6rem;
+    }
+  }
+}

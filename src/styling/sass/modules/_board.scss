@@ -1,0 +1,18 @@
+.board {
+  border-radius: 2em;
+  width: $board-size;
+  height: $board-size;
+  max-width: $board-max-size;
+  max-height: $board-max-size;
+  flex-shrink: 0;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1em;
+  position: relative;
+  margin-top: 20vh;
+
+  &--disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+}

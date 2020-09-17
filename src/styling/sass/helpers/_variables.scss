@@ -1,0 +1,58 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+// fonts
+@mixin font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin cursive-font {
+  font-family: 'Sacramento', 'Segoe Script', cursive;
+  font-weight: 400;
+}
+
+// font sizes
+$font-small: 16px;
+$font-medium: 18px;
+$font-big: 34px;
+$font-large: 45px;
+
+// main colours
+$purple: #4a4c7c;
+$deep-purple: #2b2c59;
+$blue: #74b9ff;
+$light-blue: #add8e6;
+$pink: #ff7979;
+$light-pink: #ffb6c1;
+$white: #ffffff;
+$black: #000000;
+
+$body-background: $purple;
+$overlay-background: $white;
+$header-background: rgba(0, 0, 0, 0.2);
+$nought: $pink;
+$cross: $blue;
+
+// board dimensions
+$board-size: 70vw;
+$board-max-size: 400px;
+
+// icons
+$cross-icon: '\f00d';
+$nought-icon: '\f10c';
+
+// mixins
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin base-container {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

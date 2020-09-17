@@ -1,0 +1,16 @@
+header {
+  @include flex-column;
+  justify-content: center;
+  width: 100vw;
+  height: 20vh;
+  background: $header-background;
+  color: $white;
+  text-align: center;
+
+  & p {
+    color: $light-pink;
+    font-weight: 400;
+    font-size: $font-medium;
+    line-height: 35px;
+  }
+}

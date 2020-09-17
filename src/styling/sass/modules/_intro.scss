@@ -1,0 +1,21 @@
+.intro {
+  @include flex-column;
+  justify-content: flex-start;
+  color: $light-pink;
+  font-size: $font-small;
+  @include base-container;
+
+  & header p {
+    line-height: 45px;
+  }
+
+  & > *:nth-child(2) {
+    @include flex-column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  & .start-game-btn {
+    margin: 10px 0 20vh;
+  }
+}

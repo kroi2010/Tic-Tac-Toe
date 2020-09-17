@@ -1,0 +1,24 @@
+html,
+body,
+#root {
+  @include base-container;
+}
+
+#root {
+  @include flex-column;
+  justify-content: flex-start;
+  background: $purple;
+  @include font;
+
+  & * {
+    box-sizing: border-box;
+  }
+}
+
+[class$='accent-font'] {
+  @include cursive-font;
+  margin: 0;
+  font-size: $font-big;
+  font-weight: bold;
+  color: $light-blue;
+}

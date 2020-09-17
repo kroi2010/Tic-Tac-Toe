@@ -1,0 +1,14 @@
+.input-set {
+  border: none;
+  @include flex-column;
+  width: 100%;
+  margin: 0 0 30px;
+  padding: 0;
+
+  & label {
+    color: $white;
+    font-size: $font-medium;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

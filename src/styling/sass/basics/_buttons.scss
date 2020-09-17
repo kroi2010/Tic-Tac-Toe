@@ -1,0 +1,20 @@
+[class*='user-btn'] {
+  height: 50px;
+  width: 250px;
+  border: 2px solid $white;
+  color: $white;
+  font-size: $font-small;
+  background: $body-background;
+  cursor: pointer;
+  @include font;
+
+  &:hover {
+    transition: all 0.3s ease;
+    background: $white;
+    color: $body-background;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
