@@ -2,12 +2,13 @@
 ## Tic Tac Toe
 
 Project was created for Pass the Keys.
+It is cross-browser, responsive app with material look and feel.
 
 ### React
 
 This is a single-page application built with React. 
 It mainly consists of 2 parts:
-- Intro screen, where you can select whether you want to play in pair or agains AI.
+- Intro screen, where you can select whether you want to play in pair or against AI.
 - Game itself.
 
 ### Redux
